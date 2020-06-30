@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestDigital.View.Detail"
+             x:Name="DetailView">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource BaseStack}">
+            <Label x:Name="WelcomeTitle"
+                Style="{StaticResource Title}" />
+            <Label x:Name="UserName"
+                Style="{StaticResource BaseLabel}" />
+            <Label x:Name="UserDepto"
+                Style="{StaticResource BaseLabel}" />
+            <Label x:Name="UserMupio"
+                Style="{StaticResource BaseLabel}" />
+            <Label x:Name="UserAddress"
+                Style="{StaticResource BaseLabel}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

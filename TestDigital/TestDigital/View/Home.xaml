@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestDigital.View.Home"
+             x:Name="InfoView">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource BaseStack}">
+            <Label x:Name="confirmInfo" Style="{StaticResource Title}"/>
+            <Label x:Name="userInfo" Style="{StaticResource BaseLabel}"/>
+            <Label x:Name="addressInfo" Style="{StaticResource Title}"/>
+            <Picker x:Name="departmentInfo" ItemsSource="{Binding DeptoList}" ItemDisplayBinding="{Binding depto_name}" SelectedIndexChanged="ChangeDepto" SelectedItem="{Binding DeptoSelected}"/>
+            <Picker x:Name="cityInfo" ItemsSource="{Binding MupiosList}" ItemDisplayBinding="{Binding municipio_name}" SelectedItem="{Binding MupioSelected}"/>
+            <Entry x:Name="AddressEntry" Style="{StaticResource BaseEntry}"/>
+            <Button x:Name="DetailBtn" Clicked="OnConfirmButtonClicked" Style="{StaticResource ButtonStyle}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
